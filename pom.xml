@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>proparse</groupId>
+  <artifactId>proparse-dll</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <packaging>dll</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>proparse</groupId>
+      <artifactId>proparse</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.13</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.samskivert</groupId>
+        <artifactId>ikvm-maven-plugin</artifactId>
+        <!-- Was only able to make it work with the SNAPSHOT version of the Maven plugin -->
+        <version>1.2-SNAPSHOT</version>
+        <!-- this lets Maven know that we define 'packaging: dll' -->
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
