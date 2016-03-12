@@ -5,7 +5,7 @@
 [Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\IKVM.OpenJDK.Util.dll")
 [Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\IKVM.OpenJDK.Text.dll")
 [Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\IKVM.Runtime.dll")
-[Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\proparse-dll-1.0.1-SNAPSHOT.dll")
+[Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\proparse-net-1.0.1-SNAPSHOT.dll")
 
 $pscSettings = new-object org.prorefactor.refactor.settings.ProgressSettings
 $ppSettings = new-object org.prorefactor.refactor.settings.ProparseSettings
