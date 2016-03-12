@@ -1,5 +1,9 @@
 # proparse-ikvm
 
+IKVM'ized version of [Proparse](https://github.com/jakejustus/proparse)
+
+## How to use from PowerShell
+
 ```powershell
 [Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\IKVM.OpenJDK.Core.dll")
 [Reflection.Assembly]::LoadFile("C:\Users\xxx\path\to\IKVM.OpenJDK.Util.dll")
@@ -16,3 +20,7 @@ $unit = new-object org.prorefactor.treeparser.ParseUnit("path/to/procedure.p", $
 $unit.treeParser01()
 $unit.getTopNode().toStringFullText()
 ```
+
+## How to use from ABL
+
+Left as an exercise to the reader. Please note that the "legacy" API won't probably work correctly due to numerous API changes.
